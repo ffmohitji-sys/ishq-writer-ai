@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ishq Writer – Hindi Love Story AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {font-family: Arial, sans-serif; background:#fff0f3; padding:20px;}
+    h1 {color:#b3003b; text-align:center;}
+    .box {max-width:600px; margin:auto; background:white; padding:20px; border-radius:10px;}
+    select, input, button, textarea {width:100%; margin:10px 0; padding:10px;}
+    button {background:#b3003b; color:white; border:none; font-size:16px;}
+    footer {text-align:center; margin-top:20px; font-size:14px;}
+  </style>
+</head>
+<body>
+
+<h1>❤️ Ishq Writer</h1>
+
+<div class="box">
+  <input id="topic" placeholder="कहानी का विषय लिखें">
+  
+  <select id="ending">
+    <option>Happy Ending</option>
+    <option>Sad Ending</option>
+    <option>Open Ending</option>
+  </select>
+
+  <select id="words">
+    <option value="300">300 शब्द</option>
+    <option value="600">600 शब्द</option>
+    <option value="1000">1000 शब्द</option>
+  </select>
+
+  <button onclick="generateStory()">कहानी बनाएं</button>
+
+  <textarea id="output" rows="10" placeholder="यहाँ आपकी कहानी आएगी..."></textarea>
+</div>
+
+<footer>
+  © 2025 Ishq Writer | Hindi AI Stories
+</footer>
+
+<script>
+function generateStory(){
+  document.getElementById("output").value =
+  "यह डेमो पेज है। अगला स्टेप में इसे असली AI से जोड़ा जाएगा।";
+}
+</script>
+
+</body>
+</html>
